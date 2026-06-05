@@ -73,10 +73,15 @@ Simulador de pérdida del poder adquisitivo.
 
 ## Autor
 
-Nombre completo: Joel Marcel Mamani Escobar
-Materia: Programación Web I
-Título del proyecto: SIMULADOR WEB DE ABASTECIMIENTO, PRECIOS Y CONSUMO FAMILIAR
+* **Nombre completo:** Joel Marcel Mamani Escobar
+* **Materia:** Programación Web I
 
+---
+
+## Enlaces del Proyecto
+* **Enlace de la página web:** [https://joelescobar2906-art.github.io/PROYECTOFINAL/](https://joelescobar2906-art.github.io/PROYECTOFINAL/)
+* **Enlace del repositorio Git:** [https://github.com/joelescobar2906-art.github.io/PROYECTOFINAL](https://github.com/joelescobar2906-art.github.io/PROYECTOFINAL)
+*
 ## Materia
 
 Programación Web I
