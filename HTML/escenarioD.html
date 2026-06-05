@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escenario D - Compras Familiares</title>
+
+    <link rel="stylesheet" href="../ESTILOS/escenarios.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Escenario D</h1>
+
+        <p>
+            Simulador de Compras Familiares
+        </p>
+
+    </header>
+
+    <nav>
+
+        <a href="../index.html">Inicio</a>
+        <a href="#contexto">Contexto</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#caso">Caso de Estudio</a>
+
+    </nav>
+
+    <main>
+
+        <section id="contexto">
+
+            <h2>Contexto del Problema</h2>
+
+            <p>
+
+                Las familias deben administrar adecuadamente sus gastos
+                para mantener un equilibrio económico. Este simulador
+                permite calcular cuánto dinero se gasta en productos
+                básicos durante una compra.
+
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Modelo Matemático</h2>
+
+            <p>
+
+                Gasto Total =
+                Precio × Cantidad
+
+            </p>
+
+        </section>
+
+        <section id="simulador">
+
+            <h2>Simulador</h2>
+
+            <label>Nombre del Producto</label>
+            <input type="text" id="producto">
+
+            <label>Precio Unitario (Bs)</label>
+            <input type="number" id="precio">
+
+            <label>Cantidad</label>
+            <input type="number" id="cantidad">
+
+            <button onclick="calcularCompra()">
+                Calcular
+            </button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+        <section id="caso">
+
+            <h2>Caso de Estudio</h2>
+
+            <ul>
+
+                <li>Producto: Arroz</li>
+                <li>Precio: 15 Bs</li>
+                <li>Cantidad: 20</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Conclusión</h2>
+
+            <p>
+
+                Conocer el gasto total permite tomar mejores decisiones
+                financieras y planificar de manera eficiente el presupuesto
+                familiar.
+
+            </p>
+
+            <a href="../index.html" class="boton">
+                Volver al Inicio
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Programación Web I - Escenario D
+        </p>
+
+    </footer>
+
+    <script src="../JAVASCRIPT/escenarioD.js"></script>
+
+</body>
+
+</html>

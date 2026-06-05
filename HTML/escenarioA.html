@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escenario A - Abastecimiento de Carburantes</title>
+
+    <link rel="stylesheet" href="../ESTILOS/escenarios.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Escenario A</h1>
+        <p>Simulador de Abastecimiento de Carburantes</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="#contexto">Contexto</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#caso">Caso de Estudio</a>
+    </nav>
+
+    <main>
+
+        <section id="contexto">
+
+            <h2>Contexto del Problema</h2>
+
+            <p>
+                En situaciones de escasez o retrasos en la distribución de combustible,
+                las estaciones de servicio deben controlar cuidadosamente sus reservas.
+                Este simulador permite estimar cuánto combustible quedará disponible
+                después del consumo diario y los reabastecimientos realizados.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Modelo Matemático</h2>
+
+            <p>
+
+                Reserva Final =
+                Reserva Inicial +
+                Reabastecimiento -
+                Consumo
+
+            </p>
+
+        </section>
+
+        <section id="simulador">
+
+            <h2>Simulador</h2>
+
+            <label>Reserva Inicial (Litros)</label>
+            <input type="number" id="reservaInicial">
+
+            <label>Reabastecimiento (Litros)</label>
+            <input type="number" id="reabastecimiento">
+
+            <label>Consumo Diario (Litros)</label>
+            <input type="number" id="consumo">
+
+            <button onclick="calcularReserva()">
+                Calcular
+            </button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+        <section id="caso">
+
+            <h2>Caso de Estudio</h2>
+
+            <ul>
+                <li>Reserva Inicial: 5000 litros</li>
+                <li>Reabastecimiento: 1500 litros</li>
+                <li>Consumo Diario: 4200 litros</li>
+            </ul>
+
+            <p>
+                El simulador mostrará la reserva restante y el nivel de abastecimiento.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Conclusión</h2>
+
+            <p>
+                El análisis de reservas permite tomar decisiones oportunas para evitar
+                problemas de abastecimiento y garantizar la continuidad del servicio.
+            </p>
+
+            <a href="../index.html" class="boton">
+                Volver al Inicio
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Programación Web I - Escenario A
+        </p>
+
+    </footer>
+
+    <script src="../JAVASCRIPT/escenarioA.js"></script>
+
+</body>
+
+</html>

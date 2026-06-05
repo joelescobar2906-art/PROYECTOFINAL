@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escenario C - Transporte con Desvíos</title>
+
+    <link rel="stylesheet" href="../ESTILOS/escenarios.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Escenario C</h1>
+
+        <p>
+            Simulador de Transporte con Desvíos
+        </p>
+
+    </header>
+
+    <nav>
+
+        <a href="../index.html">Inicio</a>
+        <a href="#contexto">Contexto</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#caso">Caso de Estudio</a>
+
+    </nav>
+
+    <main>
+
+        <section id="contexto">
+
+            <h2>Contexto del Problema</h2>
+
+            <p>
+
+                Los bloqueos, derrumbes o desvíos en carreteras generan
+                mayores costos de transporte para empresas y familias.
+                Este simulador permite estimar el costo adicional
+                provocado por una ruta alternativa.
+
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Modelo Matemático</h2>
+
+            <p>
+
+                Costo Normal =
+                Distancia Normal × Costo por Kilómetro
+
+            </p>
+
+            <p>
+
+                Costo con Desvío =
+                Distancia con Desvío × Costo por Kilómetro
+
+            </p>
+
+            <p>
+
+                Costo Adicional =
+                Costo con Desvío - Costo Normal
+
+            </p>
+
+        </section>
+
+        <section id="simulador">
+
+            <h2>Simulador</h2>
+
+            <label>Distancia Normal (km)</label>
+            <input type="number" id="distanciaNormal">
+
+            <label>Distancia con Desvío (km)</label>
+            <input type="number" id="distanciaDesvio">
+
+            <label>Costo por Kilómetro (Bs)</label>
+            <input type="number" id="costoKm">
+
+            <button onclick="calcularTransporte()">
+                Calcular
+            </button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+        <section id="caso">
+
+            <h2>Caso de Estudio</h2>
+
+            <ul>
+
+                <li>Distancia normal: 120 km</li>
+                <li>Distancia con desvío: 180 km</li>
+                <li>Costo por km: 3 Bs</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Conclusión</h2>
+
+            <p>
+
+                Los desvíos incrementan significativamente los costos
+                de transporte y pueden repercutir en el precio final
+                de los productos que consume la población.
+
+            </p>
+
+            <a href="../index.html" class="boton">
+                Volver al Inicio
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Programación Web I - Escenario C
+        </p>
+
+    </footer>
+
+    <script src="../JAVASCRIPT/escenarioC.js"></script>
+
+</body>
+
+</html>

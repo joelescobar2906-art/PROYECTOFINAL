@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escenario E - Rumor de Escasez</title>
+
+    <link rel="stylesheet" href="../ESTILOS/escenarios.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Escenario E</h1>
+
+        <p>
+            Simulador de Rumor de Escasez y Aumento de Demanda
+        </p>
+
+    </header>
+
+    <nav>
+
+        <a href="../index.html">Inicio</a>
+        <a href="#contexto">Contexto</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#caso">Caso de Estudio</a>
+
+    </nav>
+
+    <main>
+
+        <section id="contexto">
+
+            <h2>Contexto del Problema</h2>
+
+            <p>
+
+                Cuando circulan rumores sobre posibles faltantes de
+                productos, muchas personas compran más de lo habitual.
+                Esto provoca un incremento repentino de la demanda
+                que puede generar escasez.
+
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Modelo Matemático</h2>
+
+            <p>
+
+                Nueva Demanda =
+                Demanda Normal +
+                (Demanda Normal × Porcentaje de Aumento)
+
+            </p>
+
+        </section>
+
+        <section id="simulador">
+
+            <h2>Simulador</h2>
+
+            <label>Demanda Normal (unidades)</label>
+            <input type="number" id="demanda">
+
+            <label>Porcentaje de Aumento (%)</label>
+            <input type="number" id="porcentaje">
+
+            <label>Stock Disponible (unidades)</label>
+            <input type="number" id="stock">
+
+            <button onclick="calcularEscasez()">
+                Calcular
+            </button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+        <section id="caso">
+
+            <h2>Caso de Estudio</h2>
+
+            <ul>
+
+                <li>Demanda Normal: 1000 unidades</li>
+                <li>Aumento: 50%</li>
+                <li>Stock Disponible: 1300 unidades</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Conclusión</h2>
+
+            <p>
+
+                Los rumores pueden alterar significativamente los
+                patrones normales de consumo y generar problemas
+                de abastecimiento en la población.
+
+            </p>
+
+            <a href="../index.html" class="boton">
+                Volver al Inicio
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Programación Web I - Escenario E
+        </p>
+
+    </footer>
+
+    <script src="../JAVASCRIPT/escenarioE.js"></script>
+
+</body>
+
+</html>

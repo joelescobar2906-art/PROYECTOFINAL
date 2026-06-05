@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escenario B - Precios de Alimentos</title>
+
+    <link rel="stylesheet" href="../ESTILOS/escenarios.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Escenario B</h1>
+
+        <p>
+            Simulador de Incremento de Precios de Alimentos
+        </p>
+
+    </header>
+
+    <nav>
+
+        <a href="../index.html">Inicio</a>
+        <a href="#contexto">Contexto</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#caso">Caso de Estudio</a>
+
+    </nav>
+
+    <main>
+
+        <section id="contexto">
+
+            <h2>Contexto del Problema</h2>
+
+            <p>
+
+                Los incrementos en los precios de los alimentos afectan
+                directamente el presupuesto familiar. Este simulador
+                permite calcular el porcentaje de aumento y estimar
+                el gasto mensual generado por dicho incremento.
+
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Modelo Matemático</h2>
+
+            <p>
+
+                Porcentaje de aumento =
+                ((Precio Actual - Precio Anterior) / Precio Anterior) × 100
+
+            </p>
+
+            <p>
+
+                Gasto Mensual =
+                Precio Actual × Cantidad × 4
+
+            </p>
+
+        </section>
+
+        <section id="simulador">
+
+            <h2>Simulador</h2>
+
+            <label>Precio Anterior (Bs)</label>
+            <input type="number" id="precioAnterior">
+
+            <label>Precio Actual (Bs)</label>
+            <input type="number" id="precioActual">
+
+            <label>Cantidad Consumida por Semana</label>
+            <input type="number" id="cantidad">
+
+            <button onclick="calcularAumento()">
+                Calcular
+            </button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+        <section id="caso">
+
+            <h2>Caso de Estudio</h2>
+
+            <ul>
+
+                <li>Precio anterior: 12 Bs</li>
+                <li>Precio actual: 15 Bs</li>
+                <li>Cantidad semanal: 20 unidades</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Conclusión</h2>
+
+            <p>
+
+                El análisis de precios permite comprender el impacto
+                económico que tienen los incrementos de productos
+                básicos en la economía familiar.
+
+            </p>
+
+            <a href="../index.html" class="boton">
+                Volver al Inicio
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Programación Web I - Escenario B
+        </p>
+
+    </footer>
+
+    <script src="../JAVASCRIPT/escenarioB.js"></script>
+
+</body>
+
+</html>
